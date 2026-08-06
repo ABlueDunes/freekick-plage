@@ -33,3 +33,6 @@ jobs:
           path: _site
       - id: deploiement
         uses: actions/deploy-pages@v4
+        with:
+          # L'activation a expire deux fois a 10 min : on lui laisse 25.
+          timeout: 1500000
