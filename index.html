@@ -4,7 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
     <meta name="theme-color" content="#0b1a12" />
-    <title>Coup Franc — prototype du pied</title>
+    <title>TFS Acte I</title>
+
+    <!--
+      L'APERÇU DU LIEN PARTAGÉ (demande d'Ilias, 16/08 : « quand j'envoie le lien sur
+      WhatsApp, ça écrit "Coup franc — prototype du pied" ; je voudrais TFS Acte I »).
+
+      ⚠️ CE N'EST PAS LE <title> QUE LISENT LES MESSAGERIES, C'EST `og:title`. Le titre de
+      l'onglet ne leur sert que de repli quand les balises Open Graph manquent — ce qui était
+      le cas ici, d'où l'ancien nom affiché. Les deux doivent donc être changés ENSEMBLE :
+      corriger le seul <title> marche aujourd'hui et casserait au premier og: ajouté.
+
+      ⚠️ ET `og:image` VEUT UNE URL ABSOLUE. Un chemin relatif est ignoré en silence : le
+      robot de WhatsApp ne connaît pas la page d'où il vient. D'où le domaine écrit en dur —
+      s'il change, ces trois lignes changent avec lui.
+    -->
+    <meta property="og:title" content="TFS Acte I" />
+    <meta property="og:description" content="Trajectoire : A Football Story — le coup franc. Balaye sur le ballon pour frapper." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:url" content="https://abluedunes.github.io/freekick-plage/" />
+    <meta property="og:image" content="https://abluedunes.github.io/freekick-plage/apercu.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="TFS Acte I" />
     <style>
       :root { color-scheme: dark; }
       * { margin: 0; padding: 0; box-sizing: border-box; }
